@@ -1,0 +1,12 @@
+<% layout("./layouts/boilerplate.ejs") %>
+<body>
+    <h3>All Todos</h3>
+    <form method="get" action="/todos/new">
+        <button>Create New Task</button>
+    </form>
+    <ul>
+        <% for(let todo of allTodos) { %>
+            <li><a href="/todos/<%= todo._id %>"><%= todo.title %></a></li>
+        <% } %>
+    </ul>
+</body>

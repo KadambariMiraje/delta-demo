@@ -1,0 +1,11 @@
+<% layout("./layouts/boilerplate.ejs") %>
+<body>
+    <h3>Create a New Task</h3>
+    <form method="post" action="/todos">
+        <input name="todos[title]" placeholder="Enter title">
+        <br><br>
+        <textarea name="todos[description]" placeholder="Enter description"></textarea>
+        <br><br>
+        <button>Add</button>
+    </form>
+</body>
